@@ -1,0 +1,31 @@
+﻿{
+    "environment": "dev-forge",
+    "localCdnPath": "c:\\forge-cdn\\",
+    "baseCdnPath": "http://cdn-frg.hdquotecenter.com/",
+    "supportModules": [
+        "/serviceProxySupport/ajax.js",
+        "/serviceProxySupport/auth.js",
+        "/serviceProxySupport/notifications.js",
+        "/serviceProxySupport/ajaxOptions.js"
+    ],
+    "serviceModules": [
+        {
+            "MicroserviceName": "/serviceProxies/HomeDepot.Platform.Samples.FunnyQuote.Microservice",
+            "Version": "1.0.1-build-5",
+            "Entities": [
+                {
+                    "Name": "funnyQuote.js"
+                }
+            ]
+        },
+        {
+            "MicroserviceName": "/serviceProxies/HomeDepot.Platform.Identity.Microservice",
+            "Version": "1.0.1-build-7",
+            "Entities": [
+                {
+                    "Name": "token.js"
+                }
+            ]
+        }
+    ]
+}
