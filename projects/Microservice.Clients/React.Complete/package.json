@@ -16,6 +16,7 @@
         "babel-preset-stage-0": "^6.5.0",
         "css-loader": "^0.23.1",
         "eslint": "^2.8.0",
+        "eslint-plugin-react": "^5.0.1",
         "file-exists": "^1.0.0",
         "file-loader": "^0.8.5",
         "gulp": "^3.9.0",

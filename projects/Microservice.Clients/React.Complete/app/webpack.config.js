@@ -5,11 +5,10 @@ module.exports = {
     devtool: 'eval-source-map',
     context: __dirname,
     entry: {
-        'index': './services.js',
-        'list': './list.js'
+        'index': './index.js'
     },
     output: {
-        filename: '[name].entry.js',
+        filename: 'bundle.js',
         path: path.join(__dirname, '../wwwroot/src/js'),
         publicPath: '/'
     },
