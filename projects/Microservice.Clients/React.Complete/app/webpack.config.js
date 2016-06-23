@@ -5,7 +5,7 @@ module.exports = {
     devtool: 'eval-source-map',
     context: __dirname,
     entry: {
-        'index': './index.js',
+        'index': './services.js',
         'list': './list.js'
     },
     output: {
