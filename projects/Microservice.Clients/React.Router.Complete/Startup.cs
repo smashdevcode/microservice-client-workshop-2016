@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Builder;
+﻿using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Spa.Middleware;
 
-namespace React.Complete
+namespace React.Router.Complete
 {
     public class Startup
     {
@@ -20,12 +16,9 @@ namespace React.Complete
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
+            app.UseSpaMode();
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("TESTING");
-            });
         }
 
         // Entry point for the application.
