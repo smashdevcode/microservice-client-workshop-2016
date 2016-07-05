@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Spa.Middleware;
 
@@ -20,8 +19,5 @@ namespace React.Router.Complete
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
-
-        // Entry point for the application.
-        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }
