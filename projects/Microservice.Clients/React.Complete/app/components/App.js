@@ -1,6 +1,3 @@
-/**
- * Created by bpalmquist on 6/23/2016.
- */
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import RandomQuote from './RandomQuote';

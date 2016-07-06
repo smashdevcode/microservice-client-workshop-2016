@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Vanilla.Starter
+namespace React.Starter
 {
     public class Startup
     {

@@ -1,28 +1,25 @@
 import React, { Component } from 'react';
-import FunnyQuote from '../common/js/forge/services/funnyQuote';
-import Quote from './Quote';
+// TODO: Import the quote microservice module
+// TODO: Impor the Quote component
 
 export default class QuoteList extends Component{
-    state = {
-        quotes: []
-    };
+    // TODO: Add state that has a property that is an array of quotes
+    
     componentWillMount(){
+        // Set the uri that will handle microservice requests
         FunnyQuote.setOptions({ baseUri: 'http://dev-forge.api.hdquotecenter.com' });
         FunnyQuote.getAll().then((quotes) => {
+            
             const items = [];
-            quotes.forEach((quote) => {
-                const key = `quote_item_${quote.Id}`;
-                items.push(<li key={key} className="list-group-item">{Quote(quote)}</li>);
-            });
-
-            this.setState({quotes: items});
+            // TODO: Iterate over the quote array and push a Quote component onto the items array
+            // TODO: Set the quotes stored in state equal to the items
         });
     }
     render(){
         return (<div className="container-fluid">
             <h2>All Quotes</h2>
             <ul className="list-group">
-                {this.state.quotes}
+                // TODO: Render the Quotes in the component state
             </ul>
         </div>);
     }

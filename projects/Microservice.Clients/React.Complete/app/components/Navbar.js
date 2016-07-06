@@ -1,6 +1,3 @@
-/**
- * Created by bpalmquist on 6/23/2016.
- */
 import React, { PropTypes } from 'react';
 
 const Navbar = (setActiveLink, activeLink) =>

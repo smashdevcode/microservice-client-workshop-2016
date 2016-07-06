@@ -1,27 +1,25 @@
 import React, {Component} from 'react';
-import FunnyQuote from '../common/js/forge/services/funnyQuote';
-import Quote from './Quote';
+// TODO: Import quote microservice module
+// TODO: Import quote component
 
 export default class RandomQuote extends Component{
-    state = {
-        quote: undefined
-    };
+    // TODO: Add state to store the current random quote
     componentWillMount(){
         if(!this.state.quote) {
-            this.getRandomQuote();
+            // TODO: Add call to getRandomQuote method
         }
     }
     getRandomQuote = () => {
         FunnyQuote.setOptions({ baseUri: 'http://dev-forge.api.hdquotecenter.com' });
         FunnyQuote.getRandomQuote().then(quote => {
-            this.setState({quote: quote});
+            // TODO: Set the quote property of state to the value that comes back
         });
     };
     render(){
         return (
             <div className="container-fluid">
                 <h2>Random Quote</h2>
-                {Quote(this.state.quote)}
+                // TODO: Render the Quote using the Quote component
                 <button className="btn btn-primary" onClick={this.getRandomQuote}>Get Random Quote</button>
             </div>
         );
