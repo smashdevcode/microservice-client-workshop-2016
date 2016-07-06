@@ -6,7 +6,7 @@ export default class App extends Component {
         return (
             <div>
                 {Navbar()}
-                {this.props.children}
+                // TODO: Render route children components 
             </div>
         );
     }

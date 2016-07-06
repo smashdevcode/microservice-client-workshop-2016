@@ -1,3 +1,6 @@
+/**
+ * Created by bpalmquist on 6/23/2016.
+ */
 import React, { Component } from 'react';
 import FunnyQuote from '../common/js/forge/services/funnyQuote';
 import Quote from './Quote';

@@ -13,6 +13,6 @@ export default (() => {
                 <Route path="/list" component={QuoteList}/>
             </Route>
         </Router>
-        ), document.getElementById('root'))
+    ), document.getElementById('root'));
 })();
 

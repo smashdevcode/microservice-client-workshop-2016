@@ -9,7 +9,7 @@ import ConfigureStore from './CreateStore';
 
 export default (() => {
         const store = ConfigureStore();
-    render((<Provider store = {store} >
+        render((<Provider store = {store} >
                 <Router history={browserHistory} >
                     <Route path="/" component={AppRoot}>
                         <IndexRoute component={RandomQuote} />
