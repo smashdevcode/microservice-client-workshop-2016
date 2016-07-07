@@ -8,21 +8,17 @@ export default class RandomQuote extends Component{
         appActions: PropTypes.object
     };
     componentWillMount(){
-        const {appData} = this.props;
-        if(!appData.randomQuote) {
-            this.getRandomQuote();
-        }
+        // TODO: call getRandomQuote if we have no randomQuote in appData
     }
     getRandomQuote = () => {
-        const {appActions} = this.props;
-        appActions.getRandomQuote();
+        // TODO: use the appActions creator to get a randomQuote
     };
     render(){
-        const {appData} = this.props;
+        // TODO: pull appData off props
         return (
             <div className="container-fluid">
                 <h2>Random Quote</h2>
-                {Quote(appData.randomQuote)}
+                // TODO: Render a quote component with the appData.randomQuote data
                 <button className="btn btn-primary" onClick={this.getRandomQuote}>Get Random Quote</button>
             </div>
         );
