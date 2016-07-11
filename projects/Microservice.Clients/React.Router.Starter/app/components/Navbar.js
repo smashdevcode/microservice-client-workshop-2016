@@ -1,5 +1,5 @@
 import React from 'react';
-// TODO: Import the Link component from react-router
+import { Link } from 'react-router';
 
 const Navbar = () => {
     return (<nav className="navbar navbar-inverse">
@@ -9,12 +9,8 @@ const Navbar = () => {
             </div>
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav">
-                    <li className={location.pathname === '/' ? 'active' : ''}>
-                        // TODO: Add link to the home route
-                    </li>
-                    <li className={location.pathname === '/list' ? 'active' : ''}>
-                        // TODO: Add link to the lists route
-                    </li>
+                    <li className={location.pathname === '/' ? 'active' : ''}><Link to="/">Home</Link></li>
+                    <li className={location.pathname === '/list' ? 'active' : ''}><Link to="/list">Quotes</Link></li>
                 </ul>
             </div>
         </div>

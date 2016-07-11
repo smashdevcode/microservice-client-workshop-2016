@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
+using Spa.Middleware;
 
 namespace React.Router.Starter
 {
@@ -11,6 +12,7 @@ namespace React.Router.Starter
         {
             loggerFactory.AddConsole();
             
+            app.UseSpaMode();
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
